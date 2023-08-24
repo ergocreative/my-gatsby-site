@@ -15,6 +15,14 @@ module.exports = {
         path: `${__dirname}/src/pages/blog`,
       }
     },
+    {
+      resolve: 'gatsby-source-rest-api',
+      options: {
+        endpoints: [
+          'http://3.10.58.63:1337/blogs'
+        ],
+      },
+    },
     // Does this add images in src/images to graphQL?
 
     // {
